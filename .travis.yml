@@ -12,12 +12,17 @@ matrix:
         os:
           - linux
         name: "Linux Java Older"
+        arch:
+          - arm64
+          - amd64
       - jdk:
           - openjdk9
           - openjdk10
           - oraclejdk9
         os:
           - osx
+        arch:
+          - amd64
         name: "Mac Java Older"
       - jdk:
           - openjdk13
@@ -25,12 +30,17 @@ matrix:
         os:
           - osx
         name: "Mac Java Beta"
+        arch:
+          - amd64
       - jdk:
           - openjdk13
           - oraclejdk13
         os:
           - linux
         name: "Linux Java Beta"
+        arch:
+          - arm64
+          - amd64
       - jdk:
           - openjdk11
           - openjdk12
@@ -39,6 +49,8 @@ matrix:
         os:
           - osx
         name: "Mac Java LTS"
+        arch:
+          - amd64
     include:
       - jdk:
           - openjdk11
@@ -48,3 +60,6 @@ matrix:
         os:
           - linux
         name: "Linux Java LTS"
+        arch:
+          - arm64
+          - amd64

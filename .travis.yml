@@ -12,3 +12,15 @@ jdk:
   - oraclejdk11
   - oraclejdk12
   - oraclejdk13
+arch:
+  - arm64
+  - amd64
+os:
+  - linux
+  - osx
+  - windows
+dist:
+  - bionic
+  - xenial
+  - trusty
+  - precise

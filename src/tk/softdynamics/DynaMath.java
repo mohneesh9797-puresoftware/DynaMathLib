@@ -25,7 +25,7 @@ public class DynaMath {
 	}
 	
 	private static boolean isFaction(String a) {
-		if (a.split('/') == 2) {
+		if (a.split("/") == 2) {
 			return true;
 		} else {
 			return false;

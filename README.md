@@ -13,8 +13,6 @@
 ![GitHub commits since latest release](https://img.shields.io/github/commits-since/soft-dynamics/DynaMathLib/latest)
 ![JitPack](https://img.shields.io/jitpack/v/github/soft-dynamics/DynaMathLib)
 
-
-
 ## Docs
 
 Wiki still indev

@@ -85,15 +85,4 @@ public class DynaMath {
 			return (new String[]{"√"+DynaMath.bhaskara(a, b, c)[0], "√"+DynaMath.bhaskara(a, b, c)[1], "-√"+DynaMath.bhaskara(a, b, c)[1], "-√"+DynaMath.bhaskara(a, b, c)[0]});
 		}
 	}
-	
-	//Test handler
-	public static void main(String[] args) throws ArithmeticException, RuntimeException, NumberFormatException {
-		if (args.length != 3) {
-			throw new RuntimeException("Test failed.");
-		}
-		int a = Integer.parseInt(args[0]);
-		int b = Integer.parseInt(args[1]);
-		int c = Integer.parseInt(args[2]);
-		System.out.println(DynaMath.bhaskara(a, b, c)[0]+" "+DynaMath.bhaskara(a, b, c)[1]);
-	}
 }

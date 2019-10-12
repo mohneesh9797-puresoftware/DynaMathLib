@@ -2,13 +2,12 @@
 
 ## Shields
 
-Builds:
-[![](https://jitpack.io/v/tk.softdynamics/DynaMathLib.svg)](https://jitpack.io/#tk.softdynamics/DynaMathLib)
+Build:
 [![Build Status](https://travis-ci.org/soft-dynamics/DynaMathLib.svg?branch=master)](https://travis-ci.org/soft-dynamics/DynaMathLib)
 
 Versions:
 ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/soft-dynamics/DynaMathLib?label=GitHub%20Release&sort=semver)
-![JitPack](https://img.shields.io/jitpack/v/github/soft-dynamics/DynaMathLib)
+[![](https://jitpack.io/v/tk.softdynamics/DynaMathLib.svg)](https://jitpack.io/#tk.softdynamics/DynaMathLib)
 
 GitHub:
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/soft-dynamics/DynaMathLib)

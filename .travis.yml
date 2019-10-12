@@ -1,14 +1,50 @@
 language: java
-jdk:
-  - openjdk11
-  - openjdk12
-  - oraclejdk11
-  - oraclejdk12
-arch:
-  - arm64
-  - amd64
-os:
-  - linux
-dist:
-  - bionic
-  - xenial
+branches:
+    only:
+      - master
+matrix:
+    fast_finish: true
+    allow_failures:
+	  - jdk:
+	      - openjdk9
+	      - openjdk10
+	      - oraclejdk9
+        os:
+          - linux
+        name: "Linux Java Older"
+      - jdk:
+	      - openjdk9
+	      - openjdk10
+	      - oraclejdk9
+        os:
+          - osx
+        name: "Mac Java Older"
+      - jdk:
+          - openjdk13
+          - oraclejdk13
+        os:
+          - osx
+        name: "Mac Java Beta"
+      - jdk:
+          - openjdk13
+          - oraclejdk13
+        os:
+          - linux
+        name: "Linux Java Beta"
+      - jdk:
+	      - openjdk11
+	      - openjdk12
+	      - oraclejdk11
+	      - oraclejdk12
+        os:
+          - osx
+        name: "Mac Java LTS"
+    include:
+      - jdk:
+          - openjdk11
+          - openjdk12
+          - oraclejdk11
+          - oraclejdk12
+        os:
+          - linux
+        name: "Linux Java LTS"

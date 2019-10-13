@@ -8,7 +8,6 @@ matrix:
       - jdk:
           - openjdk9
           - openjdk10
-          - oraclejdk9
         os:
           - linux
         name: "Linux Java Older"
@@ -18,7 +17,6 @@ matrix:
       - jdk:
           - openjdk9
           - openjdk10
-          - oraclejdk9
         os:
           - osx
         arch:
@@ -41,25 +39,28 @@ matrix:
         arch:
           - arm64
           - amd64
-      - jdk:
-          - openjdk11
-          - openjdk12
-          - oraclejdk11
-          - oraclejdk12
-        os:
-          - osx
-        name: "Mac Java LTS"
-        arch:
-          - amd64
     include:
       - jdk:
           - openjdk11
           - openjdk12
           - oraclejdk11
           - oraclejdk12
+          - oraclejdk9
         os:
           - linux
         name: "Linux Java LTS"
         arch:
           - arm64
           - amd64
+      - jdk:
+          - openjdk11
+          - openjdk12
+          - oraclejdk11
+          - oraclejdk12
+          - oraclejdk9
+        os:
+          - osx
+        name: "Mac Java LTS"
+        arch:
+          - amd64
+          - arm64

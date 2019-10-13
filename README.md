@@ -23,7 +23,7 @@ About:
 
 ## Docs
 
-Wiki still indev
+[DynaWiki](https://wiki.softdynamics.tk/docs/dynamathlib/java/INDEX)
 
 ## Download
 

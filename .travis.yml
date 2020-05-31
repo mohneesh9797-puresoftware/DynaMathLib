@@ -15,22 +15,6 @@ matrix:
           - arm64
           - amd64
       - jdk:
-          - openjdk9
-          - openjdk10
-        os:
-          - osx
-        arch:
-          - amd64
-        name: "Mac Java Older"
-      - jdk:
-          - openjdk13
-          - oraclejdk13
-        os:
-          - osx
-        name: "Mac Java Beta"
-        arch:
-          - amd64
-      - jdk:
           - openjdk13
           - oraclejdk13
         os:
@@ -52,15 +36,3 @@ matrix:
         arch:
           - arm64
           - amd64
-      - jdk:
-          - openjdk11
-          - openjdk12
-          - oraclejdk11
-          - oraclejdk12
-          - oraclejdk9
-        os:
-          - osx
-        name: "Mac Java LTS"
-        arch:
-          - amd64
-          - arm64

@@ -4,35 +4,13 @@ branches:
       - master
 matrix:
     fast_finish: true
-    allow_failures:
-      - jdk:
-          - openjdk9
-          - openjdk10
-        os:
-          - linux
-        name: "Linux Java Older"
-        arch:
-          - arm64
-          - amd64
-      - jdk:
-          - openjdk13
-          - oraclejdk13
-        os:
-          - linux
-        name: "Linux Java Beta"
-        arch:
-          - arm64
-          - amd64
     include:
-      - jdk:
-          - openjdk11
-          - openjdk12
-          - oraclejdk11
-          - oraclejdk12
-          - oraclejdk9
-        os:
-          - linux
+      - arch: arm64
+        jdk: openjdk11
+        os: linux
         name: "Linux Java LTS"
-        arch:
-          - arm64
-          - amd64
+      - arch: amd64
+        jdk: openjdk11
+        os: linux
+        name: "Linux Java LTS"
+        
